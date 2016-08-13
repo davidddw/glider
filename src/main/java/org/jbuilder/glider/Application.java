@@ -1,6 +1,6 @@
-package org.d05660.jbuilder;
+package org.jbuilder.glider;
 
-import org.d05660.jbuilder.config.RootConfiguration;
+import org.jbuilder.glider.config.RootConfiguration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;

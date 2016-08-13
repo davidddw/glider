@@ -1,8 +1,8 @@
-package org.d05660.jbuilder.mapper;
+package org.jbuilder.glider.mapper;
 
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
-import org.d05660.jbuilder.entity.User;
+import org.jbuilder.glider.entity.User;
 
 public interface UserMapper {
     @Select("select * from user where id=#{id}")

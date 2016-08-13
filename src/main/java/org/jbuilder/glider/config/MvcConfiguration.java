@@ -1,4 +1,4 @@
-package org.d05660.jbuilder.config;
+package org.jbuilder.glider.config;
 
 import java.util.Properties;
 
@@ -17,7 +17,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @EnableWebMvc
 @Configuration
-@ComponentScan(useDefaultFilters = false, basePackages = { "org.d05660.jbuilder" }, includeFilters = {
+@ComponentScan(useDefaultFilters = false, basePackages = { "org.jbuilder.glider" }, includeFilters = {
         @ComponentScan.Filter(Controller.class) })
 public class MvcConfiguration extends WebMvcConfigurerAdapter {
 

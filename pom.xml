@@ -2,12 +2,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.d05660</groupId>
-  <artifactId>jbuilder</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <groupId>org.jbuilder</groupId>
+  <artifactId>glider</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>jbuilder</name>
+  <name>glider</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -218,7 +218,7 @@
                 <transformer
                   implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                   <manifestEntries>
-                    <Main-Class>org.d05660.jbuilder.Application</Main-Class>
+                    <Main-Class>org.jbuilder.glider.Application</Main-Class>
                   </manifestEntries>
                 </transformer>
               </transformers>

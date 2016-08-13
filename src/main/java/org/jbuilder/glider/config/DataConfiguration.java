@@ -1,4 +1,4 @@
-package org.d05660.jbuilder.config;
+package org.jbuilder.glider.config;
 
 import java.beans.PropertyVetoException;
 
@@ -21,7 +21,7 @@ import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 
 @Configuration
-@MapperScan(basePackages = { "org.d05660.jbuilder.mapper" })
+@MapperScan(basePackages = { "org.jbuilder.glider.mapper" })
 @PropertySource("file:/etc/jdbc.properties")
 public class DataConfiguration {
     final Logger logger = LoggerFactory.getLogger(getClass());
@@ -50,7 +50,7 @@ public class DataConfiguration {
         final SqlSessionFactoryBean sessionFactory = new SqlSessionFactoryBean();
         sessionFactory.setDataSource(dataSource);
         sessionFactory.setConfigLocation(new ClassPathResource("/mybatis-config.xml"));
-        sessionFactory.setTypeAliasesPackage("org.d05660.jbuilder");
+        sessionFactory.setTypeAliasesPackage("org.jbuilder.glider");
         sessionFactory.setTransactionFactory(springManagedTransactionFactory());
         return sessionFactory.getObject();
     }

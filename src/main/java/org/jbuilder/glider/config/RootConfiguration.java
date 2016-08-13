@@ -1,4 +1,4 @@
-package org.d05660.jbuilder.config;
+package org.jbuilder.glider.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -12,7 +12,7 @@ import com.codahale.metrics.health.HealthCheckRegistry;
 
 @Configuration
 @Import({ JettyConfiguration.class, DataConfiguration.class })
-@ComponentScan(basePackages = { "org.d05660.jbuilder" }, 
+@ComponentScan(basePackages = { "org.jbuilder.glider" }, 
         excludeFilters = { @ComponentScan.Filter(Controller.class),
         @ComponentScan.Filter(Configuration.class) })
 public class RootConfiguration {

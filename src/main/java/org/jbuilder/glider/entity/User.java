@@ -1,10 +1,14 @@
-package org.d05660.jbuilder.entity;
+package org.jbuilder.glider.entity;
 
 public class User {
     private Integer id;
     private String name;
     private Integer age;
     private String password;
+    
+    public User() {
+        super();
+    }
 
     public Integer getId() {
         return id;

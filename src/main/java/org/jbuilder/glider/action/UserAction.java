@@ -1,4 +1,4 @@
-package org.d05660.jbuilder.action;
+package org.jbuilder.glider.action;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -6,8 +6,8 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import org.d05660.jbuilder.entity.User;
-import org.d05660.jbuilder.service.UserService;
+import org.jbuilder.glider.entity.User;
+import org.jbuilder.glider.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

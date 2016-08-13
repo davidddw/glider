@@ -1,7 +1,7 @@
-package org.d05660.jbuilder.service;
+package org.jbuilder.glider.service;
 
-import org.d05660.jbuilder.entity.User;
-import org.d05660.jbuilder.mapper.UserMapper;
+import org.jbuilder.glider.entity.User;
+import org.jbuilder.glider.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package org.d05660.jbuilder.config;
+package org.jbuilder.glider.config;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;

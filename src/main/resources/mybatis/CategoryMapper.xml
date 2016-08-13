@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.jbuilder.glider.mapper.CategoryMapper">
+	<resultMap type="Category" id="BaseResultMap">
+		<result column="cid" property="cid" />
+		<result column="title" property="title" />
+	</resultMap>
+
+	<sql id="Base_Column_List">
+		cid,title
+	</sql>
+	<select id="getTypes" resultMap="BaseResultMap" parameterType="Object"
+		useCache="true">
+		SELECT
+		<include refid="Base_Column_List" />
+		from t_category where deleted = false order by sequnce
+	</select>
+
+</mapper>
